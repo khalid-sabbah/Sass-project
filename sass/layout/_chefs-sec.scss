@@ -1,0 +1,10 @@
+.chefCards{
+    display: flex;
+    column-gap: 15px;
+}
+.chefCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

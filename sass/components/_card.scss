@@ -1,0 +1,105 @@
+
+.card{
+    display: flex;
+    width: 50%;
+    padding: 0 15px;
+    img {
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 130px;
+        height: 130px;
+    }
+    p{
+        line-height: 24px;
+    }
+    &__price{
+        color: $main-color;
+    }
+}
+
+
+    .services-card{
+        @extend  %flex-center;
+        flex-direction: column;
+        width: 25%;
+        padding: 20px;
+       
+        p{
+            text-align: center;
+         }
+      &-img{
+        @extend  %flex-center;
+        @include image-Style(140px , 140px);
+       background-color: $main-color;
+       margin-bottom: 5px;
+       svg{
+          width: 80px;
+          height: 80px;
+          color: white;
+       }
+       
+      }
+      &:hover  &-img {
+        @include cardHover(#333);     }
+    };
+   
+    .review-part{
+        @extend %flex-center;
+        flex-direction: column;
+        position: relative;
+        z-index: 9999;
+        padding: 65px;
+      .span-container{
+        position: relative;
+      
+        &::before {
+            @include after-before(white,30px,-24px);
+            left: 50px;
+            margin: 15px auto 20px auto;
+        }
+      }
+      .sec{
+        margin: 15px 0 0 0;
+    }
+    }
+
+    .chefCard{
+        background-color: #f7f7f7;
+        padding: 20px;
+        position: relative;
+        &:hover .imgOverlay{
+            @include eleHover(white , rgba(85,85,85,0.6));
+            display: flex;
+        }
+        img {
+            border-radius: 50%;
+        }
+        .imgOverlay{
+            display: none;
+                position: absolute;
+                top: 20px;
+                left: 47px;
+               @include image-Style(200px ,200px);
+                align-content: center;
+                flex-wrap: wrap;
+                justify-content: center;
+
+            .icons{
+                display: flex;
+                list-style: none;
+                column-gap: 5px;
+                li{
+                    padding: 10px;
+                    border-radius: 50%;
+                    background-color: rgba(255, 255, 255, 0.8);
+                    &:hover{
+                        @include eleHover(white , $main-color)
+                    }
+                    svg{
+                        color:#555;
+                    }
+
+                }
+            }
+        }
+    }

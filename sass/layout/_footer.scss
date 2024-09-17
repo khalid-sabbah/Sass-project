@@ -1,0 +1,39 @@
+.footer-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/footer-bg.jpg?id=2124");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  @extend %flex-center;
+  flex-direction: column;
+  .footer-image {
+    padding: 40px;
+  }
+  
+  .footer-icons {
+    display: flex;
+    list-style: none;
+    column-gap: 5px;
+  }
+  li {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #555555;
+    &:hover {
+      @include eleHover(white, $main-color);
+    }
+    svg {
+      color: white;
+    }
+  }
+  .footer-text {
+    .footer-span{
+  color: $main-color;
+  padding: 8px;
+    }
+    .footer-para {
+      margin-bottom: 10px;
+    }
+  }
+}

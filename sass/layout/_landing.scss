@@ -1,0 +1,32 @@
+.landing-container{
+    width: 100%;
+    height: 90vh;
+}
+
+.landing-image{
+    background-image: url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/slide-1.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 90%;
+    background-attachment: fixed;
+}
+
+.left-arrow{
+    position: relative;
+    svg{
+        position: absolute;
+        top:250px;
+        left: 5px;
+        
+    }
+}
+.right-arrow{
+    position: relative;
+    svg{
+        position: absolute;
+        top:250px;
+        right: 5px;
+        
+    }
+}

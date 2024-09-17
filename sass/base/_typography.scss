@@ -1,0 +1,100 @@
+.card--font{
+    text-transform: capitalize;
+    @include font($titles-color, 16px,"Poppins", 600 );
+}
+
+.card__content--font{
+    @include font($text-color, 13px,"Open sans", 400 );
+}
+
+.card__content__price--font{
+    @include font($main-color, 16px,"Open sans", 700 );
+}
+
+.title--font {
+    text-transform: uppercase;
+    @include font($titles-color, 18px,"Open sans", 700 );
+}
+.title-para--font{
+    @include font($text-color, 15px,"Open sans", 400 );
+
+}
+.btn--font{
+    text-transform: uppercase;
+    text-decoration: none;
+    @include font($btn-color, 13px,"Poppins", 700 );
+}
+.nav__a--font{
+    text-transform: uppercase;
+    @include font($ul-color ,14px , "Poppins" , 600 )
+}
+.services-title{
+    text-transform: uppercase;
+    @include font($titles-color, 18px,"Open sans", 700 );
+}
+
+.services-card-para--font{
+    @include font($text-color, 15px,"Open sans", 400 );
+    text-align: center;
+    line-height: 24px;
+}
+.services-card-h5--font{
+    @include font($titles-color, 15px,"Poppins" , 600 );
+    text-transform: uppercase;
+    padding: 20px;
+
+}
+.bakery-btn--font{
+    text-transform: uppercase;
+    text-decoration: none;
+    @include font(white, 13px,"Poppins", 700 );
+}
+.bakery-para--font{
+    @include font($titles-color, 15px,"Open sans" , 400 );
+    line-height: 24px;
+    margin-bottom: 10px;
+
+}
+.bakery-title--font{
+    @include font($titles-color, 18px,"Poppins" , 600 );
+    text-transform: uppercase;
+}
+.first-review--font{
+    @include font(white, 48px,"Poppins" , 0 );
+
+}
+.sec-review--font{
+    @include font(white, 16px,"Open sans" , 600 );
+   
+}
+.chefs-text-header--font{
+    @include font($titles-color, 16px,"Poppins" , 600 );
+    text-align: center;
+    margin: 15px auto;
+    text-transform: uppercase;
+}
+.chefs-text-para--font{
+    @include font($text-color, 16px,"Open sans" , 400 );
+    line-height: 24px;
+    text-align: center
+}
+.feedback-text-para--font{
+    @include font(white, 16px,"Open sans" , 400 );
+    line-height: 26px;
+    text-align: center;
+}
+.feedback-text-h4--font{
+    @include font($main-color, 14px,"Poppins" , 600 );
+    text-align: center;
+    text-transform: uppercase;
+}
+.footer-text-para--font{
+    @include font(#ddd, 14px,"Open sans" , 400 );
+    line-height: 24px;
+    text-align: center;
+}
+.footer-text-para2--font{
+    @include font(#aaaaaa, 12px,"Open sans" , 400 );
+    line-height: 24px;
+    text-align: center;
+}

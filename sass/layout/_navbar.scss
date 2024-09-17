@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  img {
+    width: 150px;
+  }
+  nav {
+    .active{
+      color: $main-color;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      list-style: none;
+      a {
+        margin-right: 10px;
+        text-decoration: none;
+        padding: 15px;
+      }:hover{
+        color: $main-color;
+        transition: 0.3s all ease-in-out;
+      }
+    }
+  }
+  &__button{
+    text-align: center;
+    margin: 10px 0;
+}
+}

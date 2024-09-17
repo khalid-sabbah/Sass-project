@@ -1,0 +1,19 @@
+.order-form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 50px;
+         input,
+        textarea {
+            padding: 6px 12px;
+            box-sizing: border-box;
+            border: 1px solid #e1e1e1;
+        }
+    .form-full-width {
+        grid-column: span 2;
+    }
+    input{
+        height: 42px;
+    }
+
+}
